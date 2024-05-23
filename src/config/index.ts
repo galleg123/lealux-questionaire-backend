@@ -7,8 +7,6 @@ let envConfig;
 
 if (stage === "production") {
   envConfig = require("./prod").default;
-} else if (stage === "testing") {
-  envConfig = require("./testing").default;
 } else {
   envConfig = require("./local").default;
 }

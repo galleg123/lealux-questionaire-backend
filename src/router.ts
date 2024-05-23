@@ -13,6 +13,7 @@ const postAnswers = async (req, res, next) => {
     } else {
       res.json({ data: "Failed to submit answer" });
     }
+    // res.json({ data: req.body.answers }); // For testing frontend
   } catch (e) {
     next(e);
   }
