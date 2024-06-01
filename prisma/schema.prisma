@@ -16,5 +16,5 @@ datasource db {
 model answers{
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
-  answers   Int[]
+  answer   Int[]
 }
